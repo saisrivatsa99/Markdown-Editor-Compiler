@@ -1,0 +1,161 @@
+.App {
+  text-align: left; 
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: flex-start;
+  padding: 20px;
+  color: white;
+}
+
+.editor-container {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin: 20px 0;
+}
+
+/* Column for line numbers */
+.line-numbers {
+  flex: 0.03;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  background-color: #f0f0f0;
+  color: #333;
+  border-right: 1px solid #ccc;
+  text-align: left;
+  overflow-y: scroll;
+  user-select: none; 
+}
+
+.line-numbers::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* Optional: make scrollbar area transparent */
+}
+
+.markdown-editor {
+  flex: 0.97; /* Adjusted to take remaining space */
+  height: 100%;
+  padding: 10px;
+  font-size: 0.9em;
+  border: none;
+  resize: none;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-y: scroll;
+  line-height: 1.2em;
+  white-space: pre;
+}
+
+/* Right half: Markdown Renderer */
+.markdown-renderer {
+  flex: 1;
+  height: 100%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+  text-align: left;
+  color: #000;
+}
+
+code{
+  background-color: #ebebeb;
+  font-size: small;
+  color: #bd1849;
+  padding: 2px 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.markdown-content pre {
+  background-color: #282c34; 
+  padding: 10px;
+  border-color: #ebebeb;
+  overflow: auto;
+  color: #333; 
+}
+
+.code-block {
+  background-color: #282c34;
+  color: cornflowerblue;
+  border-radius: 30px;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #333;
+  color: cornflowerblue;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.copy-button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: auto;
+  font-size: smaller;
+}
+
+.copy-button:hover {
+  background-color: #555;
+}
+
+.download-button {
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.download-button:hover {
+  background-color: #45a049; 
+}
+
+.compile-button {
+  background-color: #008cba; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px; 
+}
+
+.compile-button:hover {
+  background-color: #007bb5; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+}
