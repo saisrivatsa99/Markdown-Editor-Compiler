@@ -1,5 +1,5 @@
 {
-  "homepage": "https://saisrivatsa99.github.io/markdown-editor-compiler",
+  "homepage": "https://saisrivatsa99.github.io/Markdown-Editor-Compiler",
   "name": "markdown-render",
   "version": "0.1.0",
   "private": true,
@@ -41,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
