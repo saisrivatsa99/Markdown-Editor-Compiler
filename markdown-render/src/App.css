@@ -32,7 +32,7 @@
   border-right: 1px solid #ccc;
   text-align: left;
   overflow-y: scroll;
-  user-select: none; 
+  user-select: none;
 }
 
 .line-numbers::-webkit-scrollbar {
@@ -58,7 +58,7 @@
 .markdown-renderer {
   flex: 1;
   height: 100%;
-  padding: 30px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f8f8f8;
@@ -116,8 +116,8 @@ code{
   background-color: #555;
 }
 
-.download-button {
-  background-color: #4CAF50; 
+.upload-button {
+  background-color: #008cba; 
   color: white; 
   border: none;
   padding: 10px 20px;
@@ -128,10 +128,7 @@ code{
   margin: 10px 0;
   cursor: pointer;
   border-radius: 5px;
-}
-
-.download-button:hover {
-  background-color: #45a049; 
+  margin-left: 10px; 
 }
 
 .compile-button {
@@ -153,9 +150,13 @@ code{
   background-color: #007bb5; 
 }
 
+.upload-button:hover {
+  background-color: #007bb5; 
+}
+
 .button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 10px;
 }
